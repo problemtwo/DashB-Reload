@@ -28,7 +28,7 @@ window.onload = function() {
 				value += parseInt(el.textContent);
 			});
 			value /= cls('percent').length;
-			id('main-percent').textContent = value;
+			id('main-percent').textContent = Math.round(100*value)/100;
 			}	
 	});
 
