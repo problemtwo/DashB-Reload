@@ -27,7 +27,7 @@ window.onload = function() {
 			[].forEach.call(cls('percent'),function(el){
 				value += parseInt(el.textContent);
 			});
-			value /= 4;
+			value /= cls('percent').length;
 			id('main-percent').textContent = value;
 			}	
 	});
