@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	overflow:hidden;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	--back:#1a1a1a;
+	--front:#2b2b2b;
+	--accent:#c60;
+	background:var(--back);
+}
+body>div{
+	float:left;
+	width:50%;
+	height:50%;
+}
+.cell{
+	display:flex;
+	align-items:center;
+}
+.cell>div{
+	background:var(--front);
+	margin:auto;
+	width:75%;
+	height:75%;
+}
+.half{float:left;width:50%;height:100%;}
+.circle{width:100%;font-size:0;user-select:none;}
+#main{width:50%;height:50%;}
+#main-percent-container{
+	width:100%;height:100%;display:flex;align-items:center;
+}
+.info{
+	float:left;width:100%;height:25%;resize:none;
+	font-size:2.5em;line-height:2em;
+	font-family:'VT323';text-align:center;
+	background:var(--front);color:var(--accent);
+}
+.info::selection{background:var(--accent);color:var(--front);}
+.goals-list{width:100%;height:100%;}
+.goals-list>li{float:left;width:100%;height:25%;}
+.goals-list>li>*{float:left;width:50%;height:100%;}
